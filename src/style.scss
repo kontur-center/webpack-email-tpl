@@ -1,0 +1,118 @@
+$font-family: Arial, Helvetica, sans-serif;
+p{
+  font-family: $font-family;
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 135%;
+}
+ul {
+  padding-left: 15px;
+  > li {
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+
+    img {
+      float: left;
+      margin-right: 5px;
+      margin-bottom: 18px;
+    }
+  }
+}
+h5{
+  font-family: $font-family;
+  font-size: 20px;
+  margin: 0;
+  padding: 0 0 15px;
+  font-width: 600;
+  text-align: center;
+}
+a{
+  font-size: 16px;
+  margin: 0;
+  font-width: 500;
+  font-family: $font-family;
+}
+.mb-0{
+  margin-bottom: 0!important;
+}
+.pb-0{
+  padding-bottom: 0!important;
+}
+.py-40{
+  padding: 0 40px;
+}
+.btn{
+  background: #26AD50;
+  box-shadow: 0 6px 7px rgba(38, 173, 80, 0.25);
+  border-radius: 50px;
+  display: table;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+.rg{
+  &-tpl-email{
+    background: #ebf4eb;
+    .rg{
+      &-content{
+        border-top: 5px solid #d5e7dd;
+        border-bottom: 5px solid #d5e7dd;
+        max-width: 640px;
+        background: #FFFFFF;
+        .rg{
+          &-section_0{
+            table{
+              padding-top: 40px;
+              img{
+                margin-bottom: 35px;
+              }
+            }
+          }
+          &-section_1{
+            table{
+              td{
+                &.box_1{
+                  vertical-align: initial;
+                  p{
+                    margin-bottom: 15px;
+                    span{
+                      font-weight: 600;
+                      display: block;
+                      &.border{
+                        display: table;
+                        border: 1px solid #82B579;
+                        padding: 5px;
+                        border-radius: 5px;
+                        font-weight: 400;
+                        font-size: 13px;
+                      }
+                    }
+                  }
+                }
+                &.box_2{
+
+                }
+              }
+            }
+          }
+          &-section_2{
+            table {
+              margin-top: 40px;
+              padding: 30px 40px;
+              background: #F8F8F8;
+            }
+          }
+          &-section_5{
+            table {
+              margin-top: 40px;
+              padding: 30px 40px;
+              background: #F8F8F8;
+            }
+          }
+        }
+      }
+    }
+  }
+}

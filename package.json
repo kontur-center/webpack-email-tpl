@@ -1,0 +1,53 @@
+{
+  "name": "roman_govorov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "author": "Roman Govorov",
+  "private": true,
+  "license": "ISC",
+  "scripts": {
+    "serve": "webpack serve",
+    "build": "webpack",
+    "production": "set NODE_ENV=production && webpack"
+  },
+  "browserlist": "> 0.5%, not dead",
+  "browserslist": {
+    "production": [
+      "iOS >= 6",
+      "Chrome >= 25",
+      "Firefox >= 25",
+      "Explorer >= 9"
+    ],
+    "development": [
+      "iOS >= 6",
+      "Chrome >= 25",
+      "Firefox >= 25",
+      "Explorer >= 9"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "base64-inline-loader": "^2.0.1",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "cssnano": "^5.0.16",
+    "html-webpack-inline-style-plugin": "^0.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.2.3",
+    "postcss-short": "^5.0.0",
+    "postcss-sort-media-queries": "^4.2.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
+  }
+}

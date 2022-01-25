@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= htmlWebpackPlugin.tags.headTags %>
+    <title>Рассылка</title>
+</head>
+
+<%
+let images = [
+{
+src: "https://focus-kontur.ru/wp-content/themes/RomanGovorov/assets/img/email-marketing/img_1.png",
+alt: "Логотип контур фокус",
+},
+{
+src: "https://focus-kontur.ru/wp-content/themes/RomanGovorov/assets/img/email-marketing/img_2.png",
+alt: "Вебинар Контур Фокус",
+},
+{
+src: "https://focus-kontur.ru/wp-content/themes/RomanGovorov/assets/img/email-marketing/img_3.png",
+alt: "Вебинар Контур Фокус",
+},
+{
+src: "https://focus-kontur.ru/wp-content/themes/RomanGovorov/assets/img/email-marketing/img_4.png",
+alt: "Вебинар Контур Фокус",
+},
+{
+src: "https://focus-kontur.ru/wp-content/themes/RomanGovorov/assets/img/email-marketing/img_5.png",
+alt: "Вебинар Контур Фокус",
+},
+];
+%>
+
+<body bgcolor="#F0F2F4" leftmargin="0" topmargin="0" style="height: 100%">
+<table class="rg-tpl-email" width="100%" cellspacing="0" cellpadding="0" border="0" style="height: 100%;">
+    <tr>
+        <td align="center" style="padding:0">
+            <table class="rg-content" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff">
+                <tr class="rg-section_0">
+                    <td>
+                        <table class="py-40" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                                <td width="130">
+                                    <%=_.template(require('./components/images.html').default)(images[0])%>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="rg-section_1">
+                    <td>
+                        <table class="py-40" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                                <td class="box_1" width="324">
+                                    <p><span>Уважаемый клиент,</span> Приглашаем вас на вебинар!</p>
+                                    <p><span>Возврат проблемных долгов организации в условиях кризиса. Алгоритмы и кейсы.</span></p>
+                                    <p><span class='border'>Вебинар состоится 10.02.2022, в 12.00 по МСК.</span></p>
+                                    <a class="btn" href="https://school.kontur.ru/video/11385/" target="_blank">Принять участие</a>
+                                </td>
+                                <td></td>
+                                <td class="box_2" width="200">
+                                    <%=_.template(require('./components/images.html').default)(images[1])%>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="rg-section_2">
+                    <td>
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#F8F8F8">
+                            <tr>
+                                <td>
+                                    <h5>О мероприятии</h5>
+                                    <p>Вебинар Контур.Фокус - это площадка для диадога представителей бизнеса и практикующих экспертов. На вебинаре вы узнаете о стратегиях работы, которые позволяют вернуть долги с минимальными потерями для бизнеса. Эксперт расскажет, как использовать расширенную претензионную переписку для разрешения наиболее проблемных ситуаций. А ещё разберет примеры реальных взысканий, лайфхаки из которых вы сможете использовать в работе.</p>
+                                    <p>Подключайтесь, чтобы услышать экспертное мнение и обменяться опытом со специалистами других организаций.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="rg-section_3">
+                    <td>
+                        <table class="py-40" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                                <td colspan="2">
+                                    <h5 style="text-align: center;margin-top: 40px;">Что вы узнаете на вебинаре</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="box_1" width="160">
+                                    <%=_.template(require('./components/images.html').default)(images[2])%>
+                                </td>
+                                <td class="box_2" width="380">
+                                    <ul style="list-style: none">
+                                        <li><img src="https://focus-kontur.ru/wp-content/themes/RomanGovorov/assets/img/email-marketing/check.png" alt="пункт"> Как предотвратить риски невозврата долгов;</li>
+                                        <li><img src="https://focus-kontur.ru/wp-content/themes/RomanGovorov/assets/img/email-marketing/check.png" alt="пункт"> Расширенная претензионная переписка как способ работы с долгом;</li>
+                                        <li><img src="https://focus-kontur.ru/wp-content/themes/RomanGovorov/assets/img/email-marketing/check.png" alt="пункт"> Нетипичные способы работы с долгом;</li>
+                                        <li><img src="https://focus-kontur.ru/wp-content/themes/RomanGovorov/assets/img/email-marketing/check.png" alt="пункт"> Корпоративное коллекторство: что это и как применять.</li>
+                                    </ul>
+                                    <a class="btn" href="https://school.kontur.ru/video/11385/" target="_blank">Принять участие</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="rg-section_4">
+                    <td>
+                        <table class="py-40" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                                <td colspan="2">
+                                    <h5 style="text-align: center;margin-top: 40px;">Спикер</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="box_1" width="80">
+                                    <%=_.template(require('./components/images.html').default)(images[3])%>
+                                </td>
+                                <td class="box_2" width="100%" style="padding-left: 20px;">
+                                    <p style="font-weight: 500">Дмитрий Жданухин</p>
+                                    <p style="color: #7B7B7B">кандидат юридических наук. </p>
+                                    <p>Генеральный директор «Центра развития коллекторства»</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="rg-section_5">
+                    <td>
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#F8F8F8">
+                            <tr>
+                                <td>
+                                    <h5>Как принять участие</h5>
+                                    <p>По предварительной регистрации участие в вебинаре бесплатное. Вам понадобятся только смартфон, планшет или компьютер с доступом в интернет. Чтобы забронировать место, зарегистрируйтесь. После этого вам на email придет подтверждение и ссылка на трансляцию.</p>
+                                    <a class="btn" style="margin: 0 auto;" href="https://school.kontur.ru/video/11385/" target="_blank">Принять участие</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="rg-section_6">
+                    <td>
+                        <table class="py-40" style="padding-bottom: 40px;" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                                <td colspan="2">
+                                    <h5 style="text-align: center;margin-top: 40px;">Остались вопросы?</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="box_2" width="324" style="padding-right: 20px;">
+                                    <p>Сомневаетесь в том, стоит ли участвовать в вебинаре или актуальна ли для Вас тема вебинара?</p>
+                                    <p>Заполните заявку ниже и получите ответы на все Ваши вопросы.</p>
+                                    <a class="btn" href="https://focus-kontur.ru/tarify/" target="_blank">Получить консультацию</a>
+                                </td>
+                                <td class="box_1" width="200">
+                                    <%=_.template(require('./components/images.html').default)(images[4])%>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse;">
+                        <table class="table-640" cellpadding="0" cellspacing="0" width="640" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                            <tr>
+                                <td align="center" style="border-collapse: collapse;">
+                                    <p style="color: #585757;font-family: Arial, Helvetica, sans-serif, 'Rubik Regular';">Вы получили это письмо, так как обращались в нашу компанию. Если вы не хотите больше получать наши письма,
+                                        <a href="#UNSUBSCRIBE_LINK#">нажмите сюда</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
